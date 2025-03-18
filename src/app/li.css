@@ -1,0 +1,9 @@
+@import url("https://db.onlinewebfonts.com/c/163b5956969becff559be08a3be0eb3e?family=Aeonik+Pro+Black");
+
+li{
+    cursor: pointer;
+}
+
+#titulo{
+    font-family: "Aeonik Pro Black";
+}
