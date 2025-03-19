@@ -21,7 +21,7 @@ export const Beneficios = () => {
     return (
         <section className="w-full bg-white py-8 md:py-12">
             <div className="container mx-auto px-4">
-                <div className="flex flex-wrap justify-start pr-0 lg:pr-24 gap-10 lg:gap-0 md:gap-0" data-aos="fade-right">
+                <div className="flex flex-wrap justify-start pr-8 lg:pr-10 px-8 gap-10 lg:gap-0 md:gap-0" data-aos="fade-right">
                     {benefits.map((benefit, index) => (
                         <div 
                             key={index} 
@@ -42,7 +42,7 @@ export const Beneficios = () => {
                                     className="text-white text-2xl md:text-3xl" 
                                 />
                             </div>
-                            <h3 className="text-[#191C1F] font-bold text-[17px] md:text-lg">
+                            <h3 className="text-[#191C1F] w-[22rem] lg:w-[27rem] px-8 font-bold text-[15px] md:text-md lg:text-[17px]">
                                 {benefit.text}
                             </h3>
                         </div>

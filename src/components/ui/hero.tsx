@@ -7,8 +7,8 @@ export const Hero = () => {
     return (
         <section className="px-4 min-h-screen py-10 lg:py-25 flex flex-col md:flex-col justify-around items-center">
             
-            {/* <div className="absolute min-h-full">
-                <img src="https://njstempathways.org/wp-content/uploads/2019/03/4k-wallpaper-blue-sky-blur-281260.jpg" alt="" />
+            {/* <div className="absolute w-full inset-0">
+                <img src="https://njstempathways.org/wp-content/uploads/2019/03/4k-wallpaper-blue-sky-blur-281260.jpg" alt="" className="w-full h-[160vh] object-cover"/>
             </div> */}
 
             <div className="flex drop-shadow-sm px-4 pt-30 md:px-8 flex-col justify-start w-full md:w-[55rem] items-center md:mb-0" data-aos="fade-in">

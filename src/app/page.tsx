@@ -1,8 +1,7 @@
-import { Beneficios } from "@/components/ui/beneficios";
 import { Card } from "@/components/ui/card";
 import { Header } from "@/components/ui/header";
 import { Hero } from "@/components/ui/hero";
-import { Patrocinadores } from "@/components/ui/patrocinadores";
+import { Cartões } from "@/components/ui/cartões";
 
 export default function Home() {
   return (
@@ -10,8 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Card />
-      <Patrocinadores />
-      <Beneficios />
+      <Cartões />
     </div>
   );
 }
