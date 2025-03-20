@@ -11,11 +11,8 @@ export const Header = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isAtTop, setIsAtTop] = useState(true);
-
     
-
     useEffect(() => {
-
         AOS.init({
             duration: 800,
             once: false,
@@ -26,19 +23,17 @@ export const Header = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
             
-            
             if (currentScrollY <= 10) {
                 setIsAtTop(true);
                 setIsVisible(true);
             } else {
                 setIsAtTop(false);
                 
-                
-                if (currentScrollY > lastScrollY) {
+                // Adicionamos um pequeno debounce para evitar mudanças rápidas demais
+                if (currentScrollY > lastScrollY + 5) {
                     setIsVisible(false);
                 } 
-                
-                else if (currentScrollY < lastScrollY) {
+                else if (currentScrollY < lastScrollY - 5) {
                     setIsVisible(true);
                 }
             }
@@ -55,15 +50,15 @@ export const Header = () => {
 
     return (
         <header 
-            className={`fixed top-0 w-full z-50 flex justify-center items-center px-4 transition-all duration-300 ${
-                isVisible ? "transform-none" : "-translate-y-full"
+            className={`fixed top-0 w-full z-50 flex justify-center items-center px-4 transition-all duration-500 ease-in-out ${
+                isVisible ? "opacity-100 transform-none" : "opacity-0 -translate-y-full"
             } ${
                 isAtTop 
-                    ? "backdrop-blur-md border-b border-b-slate-50" 
+                    ? "backdrop-blur-sm border-b border-b-slate-50" 
                     : "bg-[#fff] drop-shadow-md border-b-neutral-900"
             }`}
         >
-            <div className="px-1 p-6 flex max-w-[1850px] w-full justify-between items-center" data-aos="fade-in">
+            <div className="px-1 p-6 flex max-w-[1850px] w-full justify-between items-center" data-aos="fade-in" data-aos-duration="1200">
                 <div>
                     <Image 
                         src={"/letter.png"}
@@ -97,7 +92,7 @@ export const Header = () => {
                 <div className="hidden lg:flex items-center gap-5">
                     <div className={`cursor-pointer flex p-2 py-2 group transition-all duration-300 group px-6 items-center gap-2 rounded-3xl ${
                         isAtTop
-                        ? "border-2 border-white hover:border-blue-400 hover:bg-white "
+                        ? "border-2 border-white hover:border-white hover:bg-white "
                         : "border-2 border-black hover:bg-black"
                     }`}>
                         <p className={`text-[17px] font-semibold group-hover:text-black transition-all duration-300 ${
@@ -111,7 +106,6 @@ export const Header = () => {
                         ? "bg-white hover:bg-[#f0f0f0]"
                         : "bg-black hover:bg-[#1b1b1b]"
                     }`}>
-                        {/* <FontAwesomeIcon icon={faUser} className="size-[16px] mb-[1px] text-black group-hover:text-white" /> */}
                         <p className={`text-black text-[17px] font-bold ${
                             isAtTop
                             ? "text-black"
