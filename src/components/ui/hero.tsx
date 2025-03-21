@@ -10,7 +10,7 @@ export const Hero = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        // Simular um pequeno atraso antes de iniciar as animações
+
         const timeout = setTimeout(() => {
             setIsLoaded(true);
         }, 300);
@@ -18,7 +18,6 @@ export const Hero = () => {
         return () => clearTimeout(timeout);
     }, []);
 
-    // Variantes de animação para diferentes elementos
     const headingVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: { 
@@ -89,7 +88,6 @@ export const Hero = () => {
         })
     };
 
-    // Array de palavras do título para animação sequencial
     const titleWords = ["UM", "BANCO", "FEITO", "PARA", "VOCÊ.", "SIMPLES,", "SEGURO", "E", "100%", "DIGITAL."];
 
     return (
@@ -99,8 +97,7 @@ export const Hero = () => {
             animate={isLoaded ? "visible" : "hidden"}
             variants={backgroundVariants}
         >
-            
-            {/* Background gradient animation */}
+
             <motion.div 
                 className="absolute inset-0 bg-transparent z-0"
                 variants={backgroundVariants}
@@ -111,8 +108,7 @@ export const Hero = () => {
                     animate={{ opacity: 0.1 }}
                     transition={{ delay: 1, duration: 2 }}
                 />
-                
-                {/* Animated floating particles */}
+
                 {Array.from({ length: 12 }).map((_, index) => (
                     <motion.div
                         key={index}
@@ -144,7 +140,6 @@ export const Hero = () => {
                 ))}
             </motion.div>
 
-            {/* Content section */}
             <div className="flex drop-shadow-sm px-4 pt-30 md:px-8 flex-col justify-start w-full md:w-[55rem] items-center md:mb-0 z-10 mt-16">
                 <motion.h1 
                     id="titulo" 
@@ -191,7 +186,6 @@ export const Hero = () => {
                 </motion.div>
             </div>
             
-            {/* Phone image */}
             <motion.div 
                 className="min-w-[350px] lg:max-w-[500px] mt-10 w-full md:w-1/2 flex justify-center z-10"
                 variants={phoneVariants}

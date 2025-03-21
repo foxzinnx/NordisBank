@@ -84,8 +84,8 @@ export const Cartões = () => {
                     animate={controls}
                     variants={headerVariants}
                 >
-                    <h1 id="aeonik" className="text-[33px] lg:text-5xl text-[#0e0e0e] font-bold">Escolha seu cartão ideal</h1>
-                    <p className="text-[15px] lg:text-[16px]">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
+                    <h1 id="aeonik" className="text-[35px] md:text-[40px] lg:text-5xl text-[#0e0e0e] font-bold">Escolha seu cartão ideal</h1>
+                    <p className="text-[16px] md:text-[17px] lg:text-[16px]">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
                 </motion.div>
 
                 <motion.div 

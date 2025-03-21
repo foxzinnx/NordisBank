@@ -9,12 +9,13 @@
 } */
 
 body {
-  background-image: url("/wall3.png");
+  background-image: url("/background.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 html{
   scroll-behavior: smooth;
