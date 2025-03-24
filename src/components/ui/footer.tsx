@@ -111,8 +111,9 @@ export const Footer = () => {
                         <div className="flex justify-start flex-col items-start gap-4">
                             <h1 className="text-[#f1f1f1] text-[19px] font-semibold">Redes Sociais</h1>
                             <div className="flex gap-5 items-center flex-wrap">
-                                <img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-white-symbol-glyph-png.png" alt="" width={25}/>
-                                <img src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" alt="" width={33}/>
+                                <a href="https://tiktok.com/@bryannfx18" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-white-symbol-glyph-png.png" alt="" width={24}/></a>
+                                <a href="https://instagram.com/bryannfxz" target="_blank"><img src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" alt="" width={33}/></a>
+                                <a href="https://www.linkedin.com/in/bryangomes/" target="_blank">
                                 <Image 
                                     src={"/linkedin.png"}
                                     alt=""
@@ -120,7 +121,9 @@ export const Footer = () => {
                                     height={28}
                                     className="rounded-md w-[25px]"
                                 />
-                                <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="" width={30}/>
+                                </a>
+                                
+                                <a href="https://github.com/foxzinnx" target="_blank"><img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="" width={30}/></a>
                             </div>
                         </div>
                     </div>
