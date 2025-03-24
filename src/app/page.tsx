@@ -4,6 +4,8 @@ import { Hero } from "@/components/ui/hero";
 import { Cartões } from "@/components/ui/cartões";
 import { Pagamentos } from "@/components/ui/pagamentos";
 import { Notification } from "@/components/ui/notification";
+import { Informacoes } from "@/components/ui/informacoes";
+import { Footer } from "@/components/ui/footer";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Cartões />
       <Pagamentos />
       <Notification />
+      <Informacoes />
+      <Footer />
     </div>
   );
 }

@@ -11,43 +11,45 @@ export const FormSignIn = () => {
     const [cpf, setCpf] = useState("");
     const [senha, setSenha] = useState("");
     const [lembrar, setLembrar] = useState(false);
-    const [erros, setErros] = useState({ cpf: "", senha: "" });
-    const [touched, setTouched] = useState({ cpf: false, senha: false });
+    const [erros, setErros] = useState({ cpf: "", senha: ""});
+    const [touched, setTouched] = useState({ cpf: false, senha: false});
 
     const formatarCPF = (valor: string) => {
         valor = valor.replace(/\D/g, "");
-        
-        if (valor.length > 11) {
+
+        if(valor.length > 11){
             valor = valor.slice(0, 11);
         }
-        
-        if (valor.length > 0) {
+
+        if(valor.length > 0){
             valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
         }
-        if (valor.length > 3) {
+
+        if(valor.length > 3) {
             valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
         }
-        if (valor.length > 7) {
+
+        if(valor.length > 7) {
             valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
         }
-        
+
         return valor;
     };
 
     const validarCPF = (cpf: string) => {
         const cpfNumerico = cpf.replace(/\D/g, "");
-        
-        if (cpfNumerico.length === 0) {
+
+        if (cpfNumerico.length === 0){
             return "Insira um CPF";
-        } else if (cpfNumerico.length !== 11) {
+        } else if (cpfNumerico.length !== 11){
             return "Insira um CPF válido";
         }
-        
+
         return "";
     };
 
     const validarSenha = (senha: string) => {
-        if (senha.length === 0) {
+        if(senha.length === 0){
             return "Insira sua senha";
         }
         return "";
@@ -56,43 +58,43 @@ export const FormSignIn = () => {
     const handleCPFChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const valorFormatado = formatarCPF(e.target.value);
         setCpf(valorFormatado);
-        
-        if (touched.cpf) {
-            setErros({ ...erros, cpf: validarCPF(valorFormatado) });
+
+        if(touched.cpf){
+            setErros({ ...erros, cpf: validarCPF(valorFormatado)});
         }
     };
 
     const handleSenhaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSenha(e.target.value);
-        
-        if (touched.senha) {
-            setErros({ ...erros, senha: validarSenha(e.target.value) });
+
+        if(touched.senha){
+            setErros({ ...erros, senha: validarSenha(e.target.value)});
         }
     };
 
     const handleCPFBlur = () => {
-        setTouched({ ...touched, cpf: true });
-        setErros({ ...erros, cpf: validarCPF(cpf) });
+        setTouched({ ...touched, cpf: true});
+        setErros({ ...erros, cpf: validarCPF(cpf)});
     };
 
     const handleSenhaBlur = () => {
-        setTouched({ ...touched, senha: true });
-        setErros({ ...erros, senha: validarSenha(senha) });
+        setTouched({ ...touched, senha: true});
+        setErros({ ...erros, senha: validarSenha(senha)});
     };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        
+
         const cpfError = validarCPF(cpf);
         const senhaError = validarSenha(senha);
-        
-        setErros({ cpf: cpfError, senha: senhaError });
-        setTouched({ cpf: true, senha: true });
-        
-        if (!cpfError && !senhaError) {
-            router.push("/");
+
+        setErros({ cpf: cpfError, senha: senhaError});
+        setTouched({ cpf: true, senha: true});
+
+        if(!cpfError && !senhaError){
+            router.push("/")
         }
-    };
+    }
 
     return (
         <div className="w-full flex flex-col lg:flex-row justify-between items-center">
@@ -123,7 +125,7 @@ export const FormSignIn = () => {
                             <div className={`w-full bg-[#F9F9F9] h-12 ${erros.cpf ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="text" 
-                                    placeholder="000.000.000-00" 
+                                    placeholder="000.000.000-00"
                                     value={cpf}
                                     onChange={handleCPFChange}
                                     onBlur={handleCPFBlur}
@@ -141,7 +143,7 @@ export const FormSignIn = () => {
                                 <input 
                                     type="password" 
                                     placeholder="Insira sua senha" 
-                                    maxLength={22} 
+                                    maxLength={22}
                                     value={senha}
                                     onChange={handleSenhaChange}
                                     onBlur={handleSenhaBlur}
@@ -156,7 +158,7 @@ export const FormSignIn = () => {
                         <div className="mt-5 lg:mt-6 flex justify-between gap-3 px-1">
                             <div className="flex items-center gap-2">
                                 <input 
-                                    type="checkbox" 
+                                    type="checkbox"
                                     checked={lembrar}
                                     onChange={(e) => setLembrar(e.target.checked)}
                                     className="size-4"

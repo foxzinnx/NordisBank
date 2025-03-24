@@ -106,7 +106,7 @@ export const Pagamentos = () => {
     return(
         <section 
             ref={sectionRef}
-            className="bg-white w-full flex justify-center items-center py-20 overflow-hidden"
+            className="bg-white w-full flex justify-center items-center py-10 overflow-hidden"
         >
             <div className="max-w-[1500px] flex-col lg:flex-row w-full flex justify-between py-15 items-center px-7 lg:px-10">
                 <motion.div 
