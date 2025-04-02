@@ -1,4 +1,4 @@
-import { FormSignIn } from "@/components/ui/formsignin";
+import { FormSignIn } from "@/components/auth/formsignin";
 
 export default function Page() {
     return(
