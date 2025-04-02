@@ -4,10 +4,16 @@ import "../../app/font.css";
 import WaveButton from "./button";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export const Pagamentos = () => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
+    const router = useRouter();
+
+    const handleApp = () => {
+        router.push('/beta/app');
+    }
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -170,7 +176,7 @@ export const Pagamentos = () => {
                         initial="initial"
                         className="mt-2"
                     >
-                        <WaveButton label="Baixar app" />
+                        <WaveButton onClick={handleApp} label="Baixar app" />
 
                     </motion.div>
                 </motion.div>
