@@ -4,7 +4,7 @@ import "../../app/li.css";
 export const Card = () => {
   return (
     <div className="w-full mx-auto flex flex-col  lg:flex-row min-h-[43rem] bg-white p-8 md:p-12 justify-between items-center shadow-sm">
-      <div className="max-w-[150rem] pl-0 md:pl-0 lg:pl-10 flex-col lg:flex-row flex justify-between items-center mx-auto py-24 w-full">
+      <div className="max-w-[110rem] pl-0 md:pl-0 lg:pl-10 flex-col lg:flex-row flex justify-between items-center mx-auto py-24 w-full">
         <div className="px-2 gap-3 text-center lg:text-start md:px-4 flex flex-col justify-center items-start lg:w-[60rem] mb-8 lg:mb-0 w-full">
               <h1 id="titulo" className="text-[#191C1F] text-3xl md:text-4xl lg:text-6xl font-bold" data-aos="fade-right" data-aos-duration="900">
               <span className="text-[#191C1F]">NordisBank Card</span> — Seu Estilo, Sua Liberdade Financeira

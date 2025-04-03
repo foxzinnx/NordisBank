@@ -54,8 +54,8 @@ export const Notification = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
         >
-            <div className="max-w-[1550px] px-6 w-full flex flex-col gap-14 lg:flex-row justify-between items-center">
-                <div className="max-w-[800px] flex flex-col px-4 text-center lg:text-start gap-2">
+            <div className="max-w-[1650px] w-full flex flex-col gap-14 lg:flex-row justify-between items-center">
+                <div className="max-w-[850px] flex px-8 flex-col text-center lg:text-start gap-2">
                     <motion.h1 
                         variants={textVariants}
                         id="aeonik" 
@@ -101,6 +101,7 @@ export const Notification = () => {
                         <Image 
                             src={"/notification.png"}
                             alt=""
+                            layout="responsive"
                             height={100}
                             width={457}
                             className="absolute max-w-[335px] md:max-w-[430px] lg:max-w-[430px] drop-shadow-sm -translate-y-32 translate-x-2 md:translate-x-10 lg:translate-x-4"
