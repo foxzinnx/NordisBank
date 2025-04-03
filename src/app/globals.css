@@ -9,10 +9,11 @@
 } */
 
 body {
-  background-image: url("/background.png");
-  background-repeat: no-repeat;
+  /* background-image: url("/background.png"); */
+  /* background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #191C1F;
   font-family: 'Montserrat', sans-serif;
 }
 

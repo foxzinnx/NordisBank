@@ -75,11 +75,11 @@ export const Header = () => {
                     isVisible ? "opacity-100 transform-none" : "opacity-0 -translate-y-full"
                 } ${
                     isAtTop 
-                        ? "backdrop-blur-sm border-b border-b-slate-50" 
+                        ? "backdrop-blur-sm" 
                         : "bg-[#fff] drop-shadow-md border-b-neutral-900"
                 }`}
             >
-                <div className="px-1 p-6 flex max-w-[1850px] w-full justify-between items-center" data-aos="fade-in" data-aos-duration="1200">
+                <div className="px-1 md:px-3 p-6 flex max-w-[1850px] w-full justify-between items-center" data-aos="fade-in" data-aos-duration="1200">
                     <div>
                         <Image 
                             src={"/letter.png"}
@@ -89,7 +89,7 @@ export const Header = () => {
                             quality={100}
                             className={`transition-all duration-300 ${
                                 isAtTop
-                                ? "brightness-100"
+                                ? "brightness-0"
                                 : "brightness-0"
                             }`}
                         />
@@ -98,7 +98,7 @@ export const Header = () => {
                     <div>
                         <ul className={`text-[16px] hidden lg:flex pl-30 px-8 justify-center items-center gap-10 font-medium ${
                             isAtTop
-                            ? "text-white"
+                            ? "text-[#191C1F]"
                             : "text-black"
                         }`}>
                             <li className="hover:scale-115 transition-transform duration-300">Início</li>
@@ -115,12 +115,12 @@ export const Header = () => {
                         <Link href={"/signup"}>
                             <div className={`cursor-pointer flex p-2 py-2 group transition-all duration-300 group px-6 items-center gap-2 rounded-3xl ${
                                 isAtTop
-                                ? "border-2 border-white hover:border-white hover:bg-white "
+                                ? "border-2 border-[#191C1F] hover:border-white hover:bg-white "
                                 : "border-2 border-black hover:bg-black"
                             }`}>
                                 <p className={`text-[17px] font-semibold group-hover:text-black transition-all duration-300 ${
                                     isAtTop
-                                    ? "text-white"
+                                    ? "text-[#191C1F]"
                                     : "text-black group-hover:text-white"
                                 }`}>Abra sua conta</p>
                             </div>
@@ -129,12 +129,12 @@ export const Header = () => {
                         <Link href={"/signin"}>
                             <div className={`cursor-pointer flex px-6 items-center gap-2  group p-3 transition-all duration-300 rounded-3xl ${
                                 isAtTop
-                                ? "bg-white hover:bg-[#f0f0f0]"
+                                ? "bg-[#191C1F] hover:bg-[#111214]"
                                 : "bg-black hover:bg-[#1b1b1b]"
                             }`}>
                                 <p className={`text-black text-[17px] font-bold ${
                                     isAtTop
-                                    ? "text-black"
+                                    ? "text-white"
                                     : "text-white"
                                 }`}>Entrar</p>
                             </div>
@@ -147,10 +147,11 @@ export const Header = () => {
                             icon={faBars} 
                             className={`size-5 cursor-pointer ${
                                 isAtTop
-                                ? "text-white"
+                                ? "text-black"
                                 : "text-black"
                             }`} 
-                            onClick={toggleMobileMenu} 
+                            onClick={toggleMobileMenu}
+                            style={{fontSize: "20px"}}
                         />
                     </div>
                 </div>

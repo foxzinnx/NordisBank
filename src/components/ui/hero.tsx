@@ -10,7 +10,6 @@ export const Hero = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-
         const timeout = setTimeout(() => {
             setIsLoaded(true);
         }, 300);
@@ -92,14 +91,14 @@ export const Hero = () => {
 
     return (
         <motion.section 
-            className="px-4 min-h-screen py-5 lg:py-10 flex flex-col md:flex-col justify-around items-center relative overflow-hidden"
+            className="px-4 min-h-screen py-5 lg:py-10 flex flex-col lg:flex-row justify-around items-center relative overflow-hidden"
             initial="hidden"
             animate={isLoaded ? "visible" : "hidden"}
             variants={backgroundVariants}
         >
 
             <motion.div 
-                className="absolute inset-0 bg-transparent z-0"
+                className="absolute inset-0 bg-gradient-to-r from-white to-[#ebebeb] z-0"
                 variants={backgroundVariants}
             >
                 <motion.div 
@@ -140,10 +139,10 @@ export const Hero = () => {
                 ))}
             </motion.div>
 
-            <div className="flex drop-shadow-sm px-4 pt-30 md:px-8 flex-col justify-start w-full md:w-[55rem] items-center md:mb-0 z-10 mt-16">
+            <div className="flex drop-shadow-sm px-4 pt-10 md:pt-15 lg:pt-0 md:px-8 lg:px-15 flex-col justify-center w-full lg:w-[58%] items-center lg:items-start z-10 mt-16 lg:mt-0">
                 <motion.h1 
                     id="titulo" 
-                    className="text-white text-[32px] md:text-[37px] lg:text-6xl text-center font-poppins flex flex-wrap justify-center font-semibold"
+                    className="text-[#191C1F] text-3xl md:text-5xl px-0 lg:text-6xl text-center lg:text-left font-poppins flex flex-wrap justify-center lg:justify-start font-semibold"
                     variants={headingVariants}
                 >
                     {titleWords.map((word, i) => (
@@ -151,7 +150,7 @@ export const Hero = () => {
                             key={i}
                             custom={i}
                             variants={wordVariants}
-                            className="mx-2 inline-block"
+                            className="mx-2 lg:ml-0 lg:mr-4 inline-block"
                         >
                             {word}
                         </motion.span>
@@ -159,17 +158,17 @@ export const Hero = () => {
                 </motion.h1>
 
                 <motion.div 
-                    className="flex mt-8 items-center w-full gap-2 justify-center"
+                    className="flex mt-5 items-center w-full gap-2 justify-center lg:justify-start"
                     variants={buttonVariants}
                 >
                     <motion.div 
-                        className="flex cursor-pointer transition-all duration-300 p-2 px-6 items-center gap-2 border-b border-b-white group"
+                        className="flex cursor-pointer transition-all duration-300 p-2 px-6 items-center gap-2 border-b border-b-[#191C1F] group"
                         variants={buttonVariants}
                         whileHover="hover"
                     >
                         <motion.p 
-                            className="text-white text-[18px]"
-                            initial={{ color: "#ffffff" }}
+                            className="text-[#191C1F] text-[18px]"
+                            initial={{ color: "#191C1F" }}
                             whileHover={{ color: "#000000" }}
                             transition={{ duration: 0.3 }}
                         >
@@ -180,14 +179,14 @@ export const Hero = () => {
                             whileHover={{ x: 5, color: "#000000" }}
                             transition={{ duration: 0.3 }}
                         >
-                            <FontAwesomeIcon icon={faArrowRight} className="size-4 text-white group-hover:text-black" />
+                            <FontAwesomeIcon icon={faArrowRight} className="size-4 text-[#191C1F] group-hover:text-black" />
                         </motion.div>
                     </motion.div>
                 </motion.div>
             </div>
             
             <motion.div 
-                className="min-w-[350px] lg:max-w-[500px] mt-10 w-full md:w-1/2 flex justify-center z-10"
+                className="min-w-[350px] lg:min-w-0 mt-10 lg:mt-0 w-full lg:w-2/5 flex justify-center z-10"
                 variants={phoneVariants}
                 whileHover={{ 
                     y: -10,
@@ -205,9 +204,10 @@ export const Hero = () => {
                         repeatType: "reverse",
                         ease: "easeInOut"
                     }}
+                    className="w-full md:w-1/2 lg:w-2/4 mt-0 lg:mt-15"
                 >
                     <Image
-                        src={"/celular3.png"}
+                        src={"/celular4.png"}
                         alt="Smartphone do banco digital"
                         height={600}
                         width={600}
