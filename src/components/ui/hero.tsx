@@ -154,8 +154,8 @@ export const Hero = () => {
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
               <motion.button
-                className="px-8 py-3 bg-gray-900 text-white font-medium rounded-lg flex items-center gap-2 hover:bg-gray-800 transition-colors"
-                whileHover={{ scale: 1.03 }}
+                className="px-8 py-3 bg-gray-900 text-white cursor-pointer font-medium rounded-lg flex items-center gap-2 hover:bg-gray-800 transition-colors"
+                whileHover={{ background: 'transparent', border: '1px solid black', color: '#000', fontWeight: 600}}
                 whileTap={{ scale: 0.98 }}
               >
                 Conhecer agora
@@ -164,7 +164,7 @@ export const Hero = () => {
                 </svg>
               </motion.button>
               <motion.button
-                className="px-8 py-3 font-semibold text-gray-900 rounded-lg border border-gray-900 hover:border-gray-300 transition-colors"
+                className="px-8 py-3 font-semibold text-gray-900 cursor-pointer rounded-lg border border-gray-900 hover:border-gray-300 transition-all duration-200"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
