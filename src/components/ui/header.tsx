@@ -113,12 +113,12 @@ export const Header = () => {
                     <div className="hidden lg:flex items-center gap-5">
                         
                         <Link href={"/signup"}>
-                            <div className={`cursor-pointer flex p-2 py-2 group transition-all duration-300 group px-6 items-center gap-2 rounded-3xl ${
+                            <div className={`cursor-pointer flex p-2 py-2 group transition-all duration-500 group px-6 items-center gap-2 rounded-3xl ${
                                 isAtTop
-                                ? "border-2 border-[#191C1F] hover:border-white hover:bg-white "
+                                ? "border-2 border-[#191C1F] hover:border-[#191C1F] hover:bg-black"
                                 : "border-2 border-black hover:bg-black"
                             }`}>
-                                <p className={`text-[17px] font-semibold group-hover:text-black transition-all duration-300 ${
+                                <p className={`text-[17px] font-semibold group-hover:text-white transition-all duration-300 ${
                                     isAtTop
                                     ? "text-[#191C1F]"
                                     : "text-black group-hover:text-white"

@@ -84,8 +84,8 @@ export const Cartões = () => {
                     animate={controls}
                     variants={headerVariants}
                 >
-                    <h1 id="aeonik" className="text-[35px] md:text-[40px] lg:text-5xl text-[#0e0e0e] font-bold">Escolha seu cartão ideal</h1>
-                    <p className="text-[16px] md:text-[17px] lg:text-[16px]">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
+                    <h1 id="aeonik" className="text-4xl md:text-5xl lg:text-5xl text-gray-900 font-bold">Escolha seu cartão ideal</h1>
+                    <p className="text-md pt-1 lg:text-lg">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
                 </motion.div>
 
                 <motion.div 
@@ -95,7 +95,7 @@ export const Cartões = () => {
                     variants={cardContainerVariants}
                 >
                     <motion.div 
-                        className="p-5 gap-10 flex flex-col justify-center py-4 px-10 md:px-[15rem] md:hover:px-[12rem] lg:px-[6rem] lg:hover:px-[4rem] transition-all duration-300"
+                        className="p-5 gap-10 flex flex-col justify-center py-4 px-10 hover:px-9 md:px-[15rem] md:hover:px-[13rem] lg:px-[6rem] lg:hover:px-[5rem] transition-all duration-300"
                         variants={cardVariants}
                         layout
                     >
@@ -103,30 +103,30 @@ export const Cartões = () => {
                             <Image 
                                 src={"/gold.png"}
                                 alt="Cartão Gold"
-                                width={200}
+                                width={250}
                                 height={200}
                                 quality={100}
-                                className="group-hover:scale-110 transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10 group-hover:-rotate-6"
+                                className="group-hover:scale-110 max-w-[13rem] transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10 group-hover:-rotate-6"
                                 priority
                             />
                         </div>
 
                         <div className="flex flex-col gap-2 justify-center items-center">
-                            <h1 className="text-[24px] font-semibold text-black border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Gold</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-gray-900 border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Gold</h1>
                             <div className="flex mt-3 flex-col justify-center items-center gap-1">
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.5px]">Cashback de 1% em todas as compras</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.5px]">Seguro de viagem incluso</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.5px]">Acesso a salas VIP em aeroportos</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Cashback de 1% em todas as compras nacionais</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Seguro de viagem incluso</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Acesso a salas VIP em aeroportos nacionais</p>
                             </div>
                         </div>
 
                         <div className="flex cursor-pointer flex-col hover:bg-[#FFDA25] transition-all group duration-300 hover:border-[#FFDA25] mx-auto px-8 justify-center items-center border-2 border-[#e0c01d] p-3 rounded-full">
-                            <button className="cursor-pointer font-medium w-full group-hover:font-bold transition-all duration-300">Solicite Agora</button>
+                            <button className="cursor-pointer text-md md:text-lg font-medium w-full group-hover:font-bold transition-all duration-300">Solicite Agora</button>
                         </div>
                     </motion.div>
 
                     <motion.div 
-                        className="p-5 gap-10 flex flex-col justify-center py-4 px-10 md:px-[15rem] md:hover:px-[12rem] lg:px-[6rem] lg:hover:px-[4rem] transition-all duration-300"
+                        className="p-5 gap-10 flex flex-col justify-center py-4 px-10 hover:px-9 md:px-[15rem] md:hover:px-[13rem] lg:px-[6rem] lg:hover:px-[5rem] transition-all duration-300"
                         variants={cardVariants}
                         layout
                     >
@@ -134,30 +134,30 @@ export const Cartões = () => {
                             <Image 
                                 src={"/master.png"}
                                 alt="Cartão Master"
-                                width={200}
+                                width={250}
                                 height={200}
                                 quality={100}
-                                className="group-hover:scale-110 transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10"
+                                className="group-hover:scale-110 max-w-[13rem] transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10"
                                 priority
                             />
                         </div>
 
                         <div className="flex flex-col gap-2 justify-center items-center">
-                            <h1 className="text-[24px] font-semibold text-black border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Master</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-black border-b-2 pb-3 flex justify-center w-[15rem] border-b-[#d4d4d4]">Cartão Master</h1>
                             <div className="flex mt-3 flex-col gap-1 justify-center items-center">
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.3px]">Cashback de 2% em compras nacionais e internacionais</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.5px]">Seguro de viagem incluso</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15.5px]">Acesso a salas VIP em aeroportos</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Cashback de 2% em compras nacionais e internacionais</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Seguro de viagem incluso</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Acesso a salas VIP em aeroportos nacionais</p>
                             </div>
                         </div>
 
                         <div className="flex cursor-pointer flex-col hover:bg-purple-600 group transition-all duration-300 hover:border-purple-600 mx-auto px-8 justify-center items-center border-2 border-purple-600 p-3 rounded-full">
-                            <button className="cursor-pointer font-medium group-hover:text-white group-hover:font-bold transition-all duration-300 w-full">Solicite Agora</button>
+                            <button className="cursor-pointer font-medium group-hover:text-white text-md md:text-lg lg:text-[17px] group-hover:font-bold transition-all duration-300 w-full">Solicite Agora</button>
                         </div>
                     </motion.div>
 
                     <motion.div 
-                        className="p-5 gap-10 flex flex-col justify-center py-4 px-10 md:px-[15rem] md:hover:px-[12rem] lg:px-[6rem] lg:hover:px-[4rem] transition-all duration-300"
+                        className="p-5 gap-10 flex flex-col justify-center py-4 px-9 hover:px-9 md:px-[15rem] md:hover:px-[13rem] lg:px-[6rem] lg:hover:px-[5rem] transition-all duration-300"
                         variants={cardVariants}
                         layout
                     >
@@ -165,25 +165,25 @@ export const Cartões = () => {
                             <Image 
                                 src={"/blackcard.png"}
                                 alt="Cartão Black"
-                                width={200}
+                                width={250}
                                 height={200}
                                 quality={100}
-                                className="group-hover:scale-110 transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10 group-hover:rotate-6"
+                                className="group-hover:scale-110 max-w-[13rem] transition-all duration-300 group-hover:drop-shadow-md group-hover:-translate-y-10 group-hover:rotate-6"
                                 priority
                             />
                         </div>
 
                         <div className="flex flex-col gap-2 justify-center items-center">
-                            <h1 className="text-[24px] font-semibold text-black border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Black</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-black border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Black</h1>
                             <div className="flex mt-3 flex-col gap-1 justify-center items-center">
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15px]">Cashback de 3% em todas as compras</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15px]">Acesso ilimitado a salas VIP em aeroportos</p>
-                                <p className="text-center w-full md:w-[20rem] lg:w-[16rem] xl:w-[20rem] text-[15px]">Concierge 24 horas para serviços exclusivos</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Cashback de 3% em todas as compras</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Acesso ilimitado a salas VIP em todos os aeroportos</p>
+                                <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Concierge 24 horas para serviços exclusivos</p>
                             </div>
                         </div>
 
                         <div className="flex cursor-pointer flex-col hover:bg-neutral-900 group transition-all duration-300 hover:border-neutral-900 mx-auto px-8 justify-center items-center border-2 border-neutral-900 p-3 rounded-full">
-                            <button className="cursor-pointer font-medium group-hover:text-white group-hover:font-bold transition-all duration-300 w-full">Solicite Agora</button>
+                            <button className="cursor-pointer font-medium group-hover:text-white group-hover:font-bold transition-all duration-300 text-md md:text-lg lg:text-md lg:text-[17px] w-full">Solicite Agora</button>
                         </div>
                     </motion.div>
                 </motion.div>
