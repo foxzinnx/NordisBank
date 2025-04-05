@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -215,10 +216,13 @@ export const Hero = () => {
           >
             <div className="relative w-64 md:w-80 lg:w-96">
               <div className="relative z-20">
-                <img 
-                  src="/celular4.png" 
+                <Image
+                  src="/celular5.png" 
                   alt="App do banco digital"
+                  width={500}
+                  height={500}
                   className="w-full rounded-3xl" 
+                  quality={100}
                 />
               </div>
               
