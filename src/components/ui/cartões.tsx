@@ -84,8 +84,8 @@ export const Cartões = () => {
                     animate={controls}
                     variants={headerVariants}
                 >
-                    <h1 id="aeonik" className="text-4xl md:text-5xl lg:text-5xl text-gray-900 font-bold">Escolha seu cartão ideal</h1>
-                    <p className="text-md pt-1 lg:text-lg">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
+                    <h1 id="matter" className="text-4xl md:text-5xl lg:text-[3.3rem] text-gray-900 font-bold">Escolha seu cartão ideal</h1>
+                    <p id="matter" className="text-md pt-1 font-light lg:text-xl">Sem anuidades, sem tarifas abusivas e benefícios ilimitados</p>
                 </motion.div>
 
                 <motion.div 
@@ -143,7 +143,7 @@ export const Cartões = () => {
                         </div>
 
                         <div className="flex flex-col gap-2 justify-center items-center">
-                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-black border-b-2 pb-3 flex justify-center w-[15rem] border-b-[#d4d4d4]">Cartão Master</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-gray-900 border-b-2 pb-3 flex justify-center w-[15rem] border-b-[#d4d4d4]">Cartão Master</h1>
                             <div className="flex mt-3 flex-col gap-1 justify-center items-center">
                                 <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Cashback de 2% em compras nacionais e internacionais</p>
                                 <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Seguro de viagem incluso</p>
@@ -174,7 +174,7 @@ export const Cartões = () => {
                         </div>
 
                         <div className="flex flex-col gap-2 justify-center items-center">
-                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-black border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Black</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-gray-900 border-b-2 pb-3 flex justify-center w-[13rem] border-b-[#d4d4d4]">Cartão Black</h1>
                             <div className="flex mt-3 flex-col gap-1 justify-center items-center">
                                 <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Cashback de 3% em todas as compras</p>
                                 <p className="text-center w-full md:w-[23rem] lg:w-[16rem] xl:w-[20rem] text-md md:text-lg lg:text-[16px]">Acesso ilimitado a salas VIP em todos os aeroportos</p>

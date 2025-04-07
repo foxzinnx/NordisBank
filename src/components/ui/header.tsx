@@ -96,13 +96,21 @@ export const Header = () => {
                     </div>
 
                     <div>
-                        <ul className={`text-[16px] hidden lg:flex pl-30 px-8 justify-center items-center gap-10 font-medium ${
+                        <ul id="matter" className={`text-[19px] hidden lg:flex pl-30 px-8 justify-center items-center gap-8 font-medium ${
                             isAtTop
-                            ? "text-[#191C1F]"
-                            : "text-black"
+                            ? "text-gray-900"
+                            : "text-gray-900"
                         }`}>
-                            <li className="hover:scale-115 transition-transform duration-300">Início</li>
-                            <li className="hover:scale-115 transition-transform duration-300">Para você</li>
+                            <div className="flex items-center gap-2">
+                                <li className="hover:scale-115 transition-transform duration-300">Para você</li>
+                                <Image 
+                                    src={"/arrow-down.png"}
+                                    alt=""
+                                    width={14}
+                                    height={14}
+                                    className=""
+                                />
+                            </div>
                             <li className="hover:scale-115 transition-transform duration-300">Para seu negócio</li>
                             <li className="hover:scale-115 transition-transform duration-300">Ajuda</li>
                             <li className="hover:scale-115 transition-transform duration-300">Conta</li>
@@ -112,31 +120,31 @@ export const Header = () => {
 
                     <div className="hidden lg:flex items-center gap-5">
                         
+                        <Link href={"/signin"}>
+                            <div className={`cursor-pointer flex px-6 items-center gap-2 group p-[9px] transition-all duration-300 rounded-3xl ${
+                                isAtTop
+                                ? "border-2 border-black hover:bg-gray-900"
+                                : "border-2 border-black hover:bg-gray-900"
+                            }`}>
+                                <p id="matter" className={`text-[19px] font-semibold ${
+                                    isAtTop
+                                    ? "text-gray-900 group-hover:text-white"
+                                    : "text-gray-900 group-hover:text-white"
+                                }`}>Entrar</p>
+                            </div>
+                        </Link>
+
                         <Link href={"/signup"}>
                             <div className={`cursor-pointer flex p-2 py-2 group transition-all duration-500 group px-6 items-center gap-2 rounded-3xl ${
                                 isAtTop
-                                ? "border-2 border-[#191C1F] hover:border-[#191C1F] hover:bg-black"
-                                : "border-2 border-black hover:bg-black"
+                                ? "border-2 bg-gray-900 hover:border-[#191C1F]"
+                                : "border-2 bg-gray-900 hover:border-[#191C1F]"
                             }`}>
-                                <p className={`text-[17px] font-semibold group-hover:text-white transition-all duration-300 ${
-                                    isAtTop
-                                    ? "text-[#191C1F]"
-                                    : "text-black group-hover:text-white"
-                                }`}>Abra sua conta</p>
-                            </div>
-                        </Link>
-                        
-                        <Link href={"/signin"}>
-                            <div className={`cursor-pointer flex px-6 items-center gap-2  group p-3 transition-all duration-300 rounded-3xl ${
-                                isAtTop
-                                ? "bg-[#191C1F] hover:bg-[#111214]"
-                                : "bg-black hover:bg-[#1b1b1b]"
-                            }`}>
-                                <p className={`text-black text-[17px] font-bold ${
+                                <p id="matter" className={`text-[19px] font-medium group-hover:text-white transition-all duration-300 ${
                                     isAtTop
                                     ? "text-white"
                                     : "text-white"
-                                }`}>Entrar</p>
+                                }`}>Abra sua conta</p>
                             </div>
                         </Link>
                         

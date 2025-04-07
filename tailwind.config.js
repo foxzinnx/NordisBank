@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"], // Adicione aspas duplas aqui
+        poppins: ["Poppins", "sans-serif"],
+        matter: ['matter', 'sans-serif'],
       },
     },
   },
@@ -20,7 +21,6 @@ module.exports = {
   ],
 };
 
-// Plugin para criar variáveis CSS com as cores do Tailwind
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
