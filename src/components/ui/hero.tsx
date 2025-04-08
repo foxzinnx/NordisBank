@@ -2,9 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const router = useRouter();
+
+  const handleApp = () => {
+    router.push('/beta/app');
+  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -156,7 +162,7 @@ export const Hero = () => {
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
               <motion.button
                 className="px-8 py-3 bg-gray-900 text-white cursor-pointer font-medium rounded-lg flex items-center gap-2 hover:bg-gray-800 transition-colors"
-                whileHover={{ background: 'transparent', border: '1px solid black', color: '#000', fontWeight: 600}}
+                whileHover={{ background: 'rgba(16, 24, 40, 0.95)' }}
                 whileTap={{ scale: 0.98 }}
               >
                 Conhecer agora
@@ -168,6 +174,7 @@ export const Hero = () => {
                 className="px-8 py-3 font-semibold text-gray-900 cursor-pointer rounded-lg border border-gray-900 hover:border-gray-300 transition-all duration-200"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={handleApp}
               >
                 Baixar o app
               </motion.button>

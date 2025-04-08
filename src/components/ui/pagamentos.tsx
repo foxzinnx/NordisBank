@@ -138,7 +138,7 @@ export const Pagamentos = () => {
                 >
                     <motion.p 
                         id="aeonik" 
-                        className="text-4xl text-center lg:text-[53px] pb-1 text-[#0e0e0e]"
+                        className="text-4xl text-center lg:text-[53px] pb-1 text-gray-900"
                         variants={itemVariants}
                     >
                         ENVIE E RECEBA EM SEGUNDOS
@@ -146,7 +146,7 @@ export const Pagamentos = () => {
                     
                     <motion.p 
                         id="aeonik" 
-                        className="text-[1rem] lg:text-[1.3rem] text-center text-[#636363]"
+                        className="text-[1rem] font-bold lg:text-[1.3rem] text-center text-gray-600"
                         variants={itemVariants}
                     >
                         CONECTE-SE COM FACILIDADE E AGILIDADE EM CADA TRANSAÇÃO

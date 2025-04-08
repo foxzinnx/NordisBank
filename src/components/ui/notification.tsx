@@ -59,7 +59,7 @@ export const Notification = () => {
                     <motion.h1 
                         variants={textVariants}
                         id="aeonik" 
-                        className="text-4xl lg:text-6xl text-[#0e0e0e]"
+                        className="text-4xl lg:text-6xl text-gray-900"
                     >
                         DINHEIRO NA VELOCIDADE DA SUA VIDA
                     </motion.h1>
@@ -74,7 +74,7 @@ export const Notification = () => {
                     
                     <motion.div 
                         variants={buttonVariants}
-                        className="rounded-2xl hidden lg:block border-2 border-black w-[200px] cursor-pointer p-3 mt-7 hover:bg-black group transition-all duration-300"
+                        className="rounded-2xl hidden lg:block border-2 border-black w-[200px] cursor-pointer p-3 mt-7 hover:bg-gray-900 group transition-all duration-300"
                     >
                         <button className="w-full cursor-pointer font-semibold group-hover:text-white group-hover:font-bold">
                             Experimente hoje
