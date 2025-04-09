@@ -100,7 +100,7 @@ export const FormSignIn = () => {
         <div className="w-full flex flex-col lg:flex-row justify-between items-center">
             <div className="bg-[#EFF1F3] hidden lg:block w-full lg:w-1/2 max-h-screen overflow-hidden">
                 <Image 
-                    src="/homem.jpg"
+                    src="/low-angle-man-using-smartphone-outdoors.jpg"
                     alt="Descrição da imagem"
                     width={1900}
                     height={1500}
@@ -108,7 +108,7 @@ export const FormSignIn = () => {
                 />
             </div>
 
-            <div className="w-full lg:w-1/2 h-screen bg-[#FFFFFF] flex justify-center items-center px-4 sm:px-6">
+            <div className="w-full lg:w-1/2 h-screen bg-[#FFFFFF] flex justify-center items-center px-6 sm:px-6">
                 <div className="flex flex-col gap-6 lg:gap-10 justify-center items-center w-full max-w-md">
                     <Image 
                         src={"/black.png"}

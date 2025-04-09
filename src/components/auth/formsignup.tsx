@@ -142,7 +142,7 @@ export const FormSignUp = () => {
                 />
             </div>
 
-            <div className="w-full lg:w-1/2 min-h-screen bg-[#FFFFFF] flex justify-center items-center px-4 sm:px-6 py-8">
+            <div className="w-full lg:w-1/2 min-h-screen bg-[#FFFFFF] flex justify-center items-center px-6 sm:px-6 py-8">
                 <div className="flex flex-col gap-4 justify-center items-center w-full max-w-md">
                     <Image 
                         src={"/black.png"}
