@@ -117,7 +117,10 @@ export const FormSignIn = () => {
                         width={160}
                         className=""
                     />
-                    <h1 className="font-semibold text-[21px] md:text-2xl lg:text-2xl">Acesse sua conta</h1>
+                    <div className="flex pb-3 flex-col justify-center items-center gap-[2px]">
+                        <h1 className="font-semibold text-[21px] md:text-2xl lg:text-2xl">Acesse sua conta</h1>
+                        <p className="text-[15px] md:text-base opacity-65">Insira suas informações para continuar</p>
+                    </div>
 
                     <form onSubmit={handleSubmit} className="w-full">
                         <div>
