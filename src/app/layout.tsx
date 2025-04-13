@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NordisBank",
-  description: "NordisBank",
+  title: "NordisBank | Banco digital",
+  description: "NordisBank - Projeto Fullstack",
 };
 
 export default function RootLayout({
