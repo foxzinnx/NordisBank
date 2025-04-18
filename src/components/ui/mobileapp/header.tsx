@@ -12,9 +12,9 @@ export const Header = () => {
                         className="w-full h-full object-cover" 
                         />
                     </div>
-                    <div className="flex flex-col items-start leading-4 pt-1">
+                    <div className="flex flex-col items-start leading-4 gap-[5px] pt-1">
                         <p className="font-medium opacity-40">Bom dia</p>
-                        <p className="font-semibold text-lg truncate w-30">{user.name.split(' ')[0]} {user.name.split(' ')[1]?.charAt(0)}.</p>
+                        <p className="font-semibold text-gray-900 text-[1.2rem] truncate w-30">{user.name.split(' ')[0]} {user.name.split(' ')[1]?.charAt(0)}.</p>
                     </div>
                 </div>
 
@@ -22,7 +22,7 @@ export const Header = () => {
                     <div className="border border-slate-300 p-3 rounded-full">
                         <FontAwesomeIcon icon={faBell} className="size-6 text-gray-900" />
                     </div>
-                    <FontAwesomeIcon icon={faBars} className="size-6 text-gray-900" />
+                    <FontAwesomeIcon icon={faBars} className="size-6 text-lg text-gray-900" />
                 </div>
             </div>
         </header>
