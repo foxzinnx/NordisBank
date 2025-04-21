@@ -92,7 +92,7 @@ export const FormSignIn = () => {
         setTouched({ cpf: true, senha: true});
 
         if(!cpfError && !senhaError){
-            router.push("/")
+            router.push("/beta/app")
         }
     }
 
@@ -125,7 +125,7 @@ export const FormSignIn = () => {
                     <form onSubmit={handleSubmit} className="w-full">
                         <div>
                             <h1 className="font-medium pb-1">CPF</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-12 ${erros.cpf ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-12 ${erros.cpf ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="text" 
                                     placeholder="000.000.000-00"
@@ -142,7 +142,7 @@ export const FormSignIn = () => {
 
                         <div>
                             <h1 className="font-medium mt-6 lg:mt-8 pb-[5px]">Senha</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-12 ${erros.senha ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-12 ${erros.senha ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="password" 
                                     placeholder="Insira sua senha" 
@@ -173,10 +173,10 @@ export const FormSignIn = () => {
 
                         <button 
                             type="submit" 
-                            className="flex justify-center bg-black transition-all duration-300 hover:bg-[#141414] p-[13px] cursor-pointer gap-2 rounded-3xl items-center w-full mt-8 lg:mt-5"
+                            className="flex justify-center group bg-black transition-all duration-300 hover:bg-[#141414] p-[13px] cursor-pointer gap-2 rounded-lg items-center w-full mt-8 lg:mt-5"
                         >
                             <span className="text-base lg:text-[17px] text-white font-semibold cursor-pointer">Acessar</span>
-                            <FontAwesomeIcon icon={faArrowRight} className="size-4 lg:size-5 text-white" />
+                            <FontAwesomeIcon icon={faArrowRight} className="size-4 lg:size-5 group-hover:translate-x-1 transition-all duration-500 text-white" />
                         </button>
 
                         <div className="flex justify-center items-center mt-6">

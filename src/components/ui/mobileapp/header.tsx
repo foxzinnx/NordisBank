@@ -12,8 +12,8 @@ export const Header = () => {
                         className="w-full h-full object-cover" 
                         />
                     </div>
-                    <div className="flex flex-col items-start leading-4 gap-[5px] pt-1">
-                        <p className="font-medium opacity-40">Bom dia</p>
+                    <div className="flex flex-col items-start leading-4 gap-[6px] pt-1">
+                        <p className="font-semibold text-gray-900 opacity-40">Bom dia</p>
                         <p className="font-semibold text-gray-900 text-[1.2rem] truncate w-30">{user.name.split(' ')[0]} {user.name.split(' ')[1]?.charAt(0)}.</p>
                     </div>
                 </div>

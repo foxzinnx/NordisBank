@@ -159,7 +159,7 @@ export const FormSignUp = () => {
                     <form onSubmit={handleSubmit} className="w-full">
                         <div className="mb-3">
                             <h1 className="font-medium pb-2">Nome</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-11 lg:h-12 ${erros.nome && touched.nome ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-11 lg:h-12 ${erros.nome && touched.nome ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="text" 
                                     placeholder="Insira seu nome completo" 
@@ -177,7 +177,7 @@ export const FormSignUp = () => {
 
                         <div className="mb-3">
                             <h1 className="font-medium pb-2">Email</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-11 lg:h-12 ${erros.email && touched.email ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-11 lg:h-12 ${erros.email && touched.email ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="email" 
                                     placeholder="Insira seu email" 
@@ -195,7 +195,7 @@ export const FormSignUp = () => {
 
                         <div className="mb-3">
                             <h1 className="font-medium pb-2">CPF</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-11 lg:h-12 ${erros.cpf && touched.cpf ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-11 lg:h-12 ${erros.cpf && touched.cpf ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="text" 
                                     placeholder="000.000.000-00" 
@@ -213,7 +213,7 @@ export const FormSignUp = () => {
 
                         <div>
                             <h1 className="font-medium pb-2">Senha</h1>
-                            <div className={`w-full bg-[#F9F9F9] h-11 lg:h-12 ${erros.senha && touched.senha ? 'border border-red-500 rounded-md' : ''}`}>
+                            <div className={`w-full bg-[#F5F6FA] rounded-md h-11 lg:h-12 ${erros.senha && touched.senha ? 'border border-red-500 rounded-md' : ''}`}>
                                 <input 
                                     type="password" 
                                     placeholder="Insira sua senha" 
@@ -243,10 +243,10 @@ export const FormSignUp = () => {
 
                         <button 
                             type="submit" 
-                            className="flex justify-center bg-black transition-all duration-300 hover:bg-[#141414] p-3 cursor-pointer gap-2 rounded-3xl items-center w-full mt-4 lg:mt-5"
+                            className="flex justify-center group bg-black transition-all duration-300 hover:bg-[#141414] p-[13px] cursor-pointer gap-2 rounded-lg items-center w-full mt-4 lg:mt-5"
                         >
                             <span className="text-sm lg:text-base text-white font-semibold cursor-pointer">Cadastrar</span>
-                            <FontAwesomeIcon icon={faArrowRight} className="size-4 text-white" />
+                            <FontAwesomeIcon icon={faArrowRight} className="size-4 group-hover:translate-x-2 transition-all duration-500 text-white" />
                         </button>
                         
                         <div className="flex justify-center items-center mt-5 lg:mt-6">
