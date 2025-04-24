@@ -2,6 +2,7 @@ import { AppDownloadScreen } from "@/components/ui/appdownloadscreen";
 import { Balance } from "@/components/ui/mobileapp/balance";
 import { Card } from "@/components/ui/mobileapp/card";
 import { Header } from "@/components/ui/mobileapp/header";
+import { Transactions } from "@/components/ui/mobileapp/transactions";
 
 export default function Page() {
     
@@ -15,6 +16,7 @@ export default function Page() {
                 <Header />
                 <Balance />
                 <Card />
+                <Transactions />
             </div>
         </div>
     );
