@@ -23,7 +23,7 @@ export const Card = () => {
         </div>
             
         <div className="w-full flex-col gap-5 lg:w-[40rem] flex justify-center items-center" data-aos="fade-right">
-            <div className="relative cursor-pointer hover:rotate-12 transform hover:scale-105 transition-transform duration-300">
+            <div className="relative cursor-pointer hover:rotate-y-360 transform hover:scale-105 hover:rotate-3 transition-transform duration-700">
             <Image
                 src="/blackcard.png"
                 alt="NordisBank Card Premium"

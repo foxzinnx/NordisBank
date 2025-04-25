@@ -224,7 +224,7 @@ export const Hero = () => {
             <div className="relative w-64 md:w-80 lg:w-96">
               <div className="relative z-20">
                 <Image
-                  src="/celular5.png" 
+                  src="/celular-app.png" 
                   alt="App do banco digital"
                   width={500}
                   height={500}
