@@ -8,7 +8,7 @@ export const Transactions = () => {
                 <p id="matter" className="font-medium border-b border-b-gray-900 opacity-60">Ver mais</p>
             </div>
 
-            <div className="mt-5 w-full space-y-4">
+            <div className="mt-5 w-full mb-5 space-y-4">
                 <Transaction />
                 <Transaction />
                 <Transaction />
