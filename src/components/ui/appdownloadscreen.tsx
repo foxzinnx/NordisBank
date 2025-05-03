@@ -3,7 +3,12 @@ import Image from "next/image";
 import "../../app/font.css";
 import { useRouter } from "next/navigation";
 
-export const AppDownloadScreen = () => {
+interface Props {
+  title: string;
+  body: string;
+}
+
+export const AppDownloadScreen = ({ title, body }: Props) => {
   const router = useRouter();
 
   const handleHome = () => {
@@ -32,8 +37,8 @@ export const AppDownloadScreen = () => {
             onClick={handleHome}
             className="mb-5 cursor-pointer"
           />
-          <h1 id="aeonik" className="font-semibold text-[3rem] px-8 text-gray-900">EXPERIMENTE NOSSO APP</h1>
-          <p id="matter" className="text-xl text-gray-900 px-10 mb-3 md:px-0 lg:px-10 font-medium">Tenha acesso a todas as funcionalidades na palma da sua mão</p>
+          <h1 id="aeonik" className="font-semibold text-[3rem] px-8 text-gray-900">{title}</h1>
+          <p id="matter" className="text-xl text-gray-900 px-10 mb-3 md:px-0 lg:px-10 font-medium">{body}</p>
           <div className="bg-gray-200 mt-6 p-4 rounded-xl">
             <Image 
               src={"/frame.png"}

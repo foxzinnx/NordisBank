@@ -7,11 +7,12 @@ import { OptionsGrid } from "@/components/ui/mobileapp/optionsgrid";
 import { Transactions } from "@/components/ui/mobileapp/transactions";
 
 export default function Page() {
-    
+
     return(
         <div className="min-h-screen">
+        
             <div className="hidden md:block">
-                <AppDownloadScreen />
+                <AppDownloadScreen title="EXPERIMENTE NOSSO APP" body="Tenha acesso a todas as funcionalidades na palma da sua mão" />
             </div>
             
             <div className="block md:hidden">

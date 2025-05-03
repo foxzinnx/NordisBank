@@ -1,13 +1,23 @@
+"use client"
 import { user } from "@/data/user";
 import { faBars, faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
+
+    const router = useRouter();
+
+    const handleProfile = () => {
+        router.push('/beta/app/profile');
+    }
+
+
     return(
         <header className="">
             <div className="flex justify-between items-center p-5 w-full">
                 <div className="flex items-center gap-3">
-                    <div className="w-[65px] h-[65px] overflow-hidden rounded-full">
+                    <div onClick={handleProfile} className="w-[65px] h-[65px] overflow-hidden rounded-full">
                         <img src={user.avatar} alt=""
                         className="w-full h-full object-cover" 
                         />
