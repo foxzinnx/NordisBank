@@ -8,6 +8,7 @@ import { Informacoes } from "@/components/ui/informacoes";
 import { Footer } from "@/components/ui/footer";
 
 export default function Home() {
+
   return (
     <div className="overflow-x-hidden">
       <Header />

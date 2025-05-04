@@ -6,5 +6,6 @@ export const user: User = {
     balance: '7.928,60',
     slug: '@bryan',
     followers: 56,
-    following: 104
+    following: 104,
+    verified: true,
 }

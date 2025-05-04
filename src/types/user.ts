@@ -5,4 +5,5 @@ export type User = {
     slug: string;
     followers: number;
     following: number;
+    verified: boolean;
 }
